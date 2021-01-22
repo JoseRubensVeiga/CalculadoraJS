@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="calculator-container">
+        <div class="calculator-display">
+          <div class="calculator-display-exp" id="calculator-display-exp"></div>
+          <div
+            class="calculator-display-result"
+            id="calculator-display-result"
+          ></div>
+        </div>
+        <div class="calculator-keyboard">
+          <div class="clear" onclick="clearCalculator()">c</div>
+          <div class="operator" onclick="setExpression('%')">%</div>
+          <div class="number" onclick="setExpression(7)">7</div>
+          <div class="number" onclick="setExpression(8)">8</div>
+          <div class="number" onclick="setExpression(9)">9</div>
+          <div class="operator" onclick="setExpression('/')">/</div>
+          <div class="number" onclick="setExpression(4)">4</div>
+          <div class="number" onclick="setExpression(5)">5</div>
+          <div class="number" onclick="setExpression(6)">6</div>
+          <div class="operator" onclick="setExpression('&times;')">&times;</div>
+          <div class="number" onclick="setExpression(1)">1</div>
+          <div class="number" onclick="setExpression(2)">2</div>
+          <div class="number" onclick="setExpression(3)">3</div>
+          <div class="operator" onclick="setExpression('-')">
+            <div class="minus"></div>
+          </div>
+          <div class="number zero" onclick="setExpression(0)">0</div>
+          <div class="number" onclick="setExpression('.')">
+            <div class="dot"></div>
+          </div>
+          <div class="operator" onclick="setExpression('+')">+</div>
+          <div class="operator equal" onclick="clearExpression()">=</div>
+          <div class="operator" onclick="doBackspace()">
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
